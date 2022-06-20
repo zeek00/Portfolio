@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 
 import './Home.style.css'
 import Drawer from "../Drawer/Drawer.view";
+import Social from "../Social/Social.view";
 
 
 function Home() {
@@ -24,13 +25,11 @@ function Home() {
       
 
       <Row>
-        <Col sm={6} lg={10} class='name'>
-          <h2>Isaac Isewede
+        <Col sm={12} md={12} lg={10} className='name'>
           
-          </h2>
         </Col>
-        <Col sm={6} lg={2} class='social-links'>
-          <h2>Zeek</h2>
+        <Col sm={12} md={12} lg={2} className='social-links'>
+          <Social/>
         </Col>
       </Row>
     </Container>

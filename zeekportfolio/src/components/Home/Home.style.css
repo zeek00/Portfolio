@@ -1,9 +1,50 @@
-.name h2{
-    margin-top: 50%;
-    font-family: Consolas;
+.name, h2{
+    text-align: center;
     font-size: 2rem;
-    border: 1px solid purple;
     color: #fff;
-
+    font-family: Consolas;
 }
 
+
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .name, h2{
+        text-align: center;
+        font-size: 2rem;
+        color: #fff;
+        font-family: Consolas;
+    }
+    
+
+    
+    }
+
+    /* Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+        .name, h2{
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            font-family: Consolas;
+        }
+        
+    }
+    
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+        .name, h2{
+            text-align: left;
+            font-size: 2rem;
+            color: #fff;
+            font-family: Consolas;
+        }
+        
+     }
+    
+    /* X-Large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {  }
+    
+    /* XX-Large devices (larger desktops, 1400px and up)*/
+    @media (min-width: 1400px) { }

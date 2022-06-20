@@ -19,6 +19,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    z-index: 2;
 }
 
 .link-area{
@@ -52,22 +53,29 @@ a{
 .bar{
     display: block;
     width: 30px;
-
     height: 1.5px;
+    border: 2px solid #fff;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     font-weight: bolder;
-    background-color: white;
+    background-color: #fff;
+}
+.bar:hover{
+    transform: scale(1.2);
+    color: #ff1737;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 995px){
+@media screen and (min-width: 990px){
     .navbar{
         display: none;
     }
 }
 
-@media screen and (max-width: 995px){
+
+
+@media screen and (max-width: 990px){
     .hamburger{
         display: block;
         z-index: 2;

@@ -3,15 +3,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {FaThList} from 'react-icons/fa'
 import './Drawer.styles.css'
 import './hamburger'
+import Header from "../Header/Header.view";
 
 
+
+ 
 
 function Drawer() {
  
   return (
     
             <nav class="navbar">
-              <a href="">ZeekDev</a>
+                <Header/>
+              <h2>
+            Isaac Isewede
+          
+          </h2>
                 <ul class="nav-menu">
                   <div className="link-area">
                       <li class="nav-item">
@@ -35,7 +42,7 @@ function Drawer() {
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                    <span class="bar"></span>
+                    
                     
                 </div>
             </nav>
