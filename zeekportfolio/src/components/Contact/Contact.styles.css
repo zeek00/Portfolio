@@ -13,9 +13,11 @@
 .contact-area{
     position: relative;
     padding: 5%;
-    margin-top: 15vh;
+    margin-top: 12vh;
     background-color: rgb(0,0,0,0.9);
     height: auto;
+
+
     
 }
 
@@ -102,6 +104,18 @@
     
 }
 
+.contact-form input:focus{
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: rgba(255,255,255,0.6);
+}
+
+.contact-form textarea:focus{
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: rgba(255,255,255,0.6);
+}
+
 .contact-form input::placeholder{
     color: rgba(255,255,255,0.6);
 
@@ -156,13 +170,18 @@
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+    body{
+        overflow: hidden;
+    }
+
     .contact-area{
-    
         background-color: rgb(0,0,0,0.9);
         height: 70vh;
     }
+
     
-    }
+
+}
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {

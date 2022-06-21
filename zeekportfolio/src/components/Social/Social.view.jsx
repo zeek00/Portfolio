@@ -9,7 +9,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter,AiOutlineDribbble } from
 const Social = () =>(
     <Container>
         <Row>
-            <Col lg={2}></Col>
+
             <Col sm={12} md={12} lg={2}>
                 
           
