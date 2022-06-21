@@ -1,5 +1,14 @@
+*{
+  font-family: 'Consolas', serif;
+}
+
 body {
-  margin: 0;
+  background-image: url('../src/assets/bg/bg-main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  overflow: scroll;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

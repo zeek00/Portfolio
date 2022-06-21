@@ -1,8 +1,7 @@
-/*
-*
-* import React from 'react';
+import React from 'react';
 import './Contact.styles.css'
 import Header from '../Header/Header.view';
+import { useNavigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,12 +10,40 @@ import {FiShare2} from 'react-icons/fi'
 import {MdAlternateEmail} from 'react-icons/md'
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter,AiOutlineDribbble } from 'react-icons/ai';
 import Form from 'react-bootstrap/Form'
+import Drawer from "../Drawer/Drawer.view";
 
 
-const Contact = () =>(
+function Contact () {
+    const navigate = useNavigate();
+    return(
 
    <div className='contact'>
-    <Header/>
+       <nav className="header-container">
+           <Drawer/>
+       </nav>
+
+       <div className="wrapper">
+           <ul className="nav-menu">
+               <div className="link-area">
+                   <li className="nav-item">
+                       <a onClick={()=>{navigate('/home')}}  className="nav-link">Home</a>
+                   </li>
+
+                   <li className="nav-item">
+                       <a onClick={()=>{navigate('/about')}} className="nav-link">About</a>
+                   </li>
+
+                   <li className="nav-item">
+                       <a onClick={()=>{navigate('/portfolio')}}  className="nav-link">Portolio</a>
+                   </li>
+
+                   <li className="nav-item">
+                       <a onClick={()=>{navigate('/contact')}} className="nav-link">Contact</a>
+                   </li>
+               </div>
+           </ul>
+       </div>
+
 
     <Container>
         <Row>
@@ -128,8 +155,6 @@ const Contact = () =>(
    </div>
 
 );
+}
 
 export default Contact
-*
-*
-* */
