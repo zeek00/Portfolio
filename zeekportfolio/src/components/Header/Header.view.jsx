@@ -7,8 +7,6 @@ function Header() {
   return (
     <body>
       <nav className="header-container">
-
-        <Drawer/>
       </nav>
         
     </body>

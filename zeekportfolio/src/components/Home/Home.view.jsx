@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {FaThList} from 'react-icons/fa'
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -18,7 +18,7 @@ function Home() {
 
       <Row>
         <Col sm={12}>
-          <Drawer/>
+
         </Col>
         
       </Row>

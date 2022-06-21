@@ -1,4 +1,6 @@
-import React from 'react';
+/*
+*
+* import React from 'react';
 import './Contact.styles.css'
 import Header from '../Header/Header.view';
 import Container from 'react-bootstrap/Container';
@@ -12,7 +14,7 @@ import Form from 'react-bootstrap/Form'
 
 
 const Contact = () =>(
-   
+
    <div className='contact'>
     <Header/>
 
@@ -28,20 +30,20 @@ const Contact = () =>(
                             <Col md={12} lg={6} >
                                 <div className="d-flex align-items-stretch mb-4 info-area">
                                     <div className="content-area">
-                                        <div className="icon-area">    
+                                        <div className="icon-area">
                                             <div className='icons-border'>
                                                 <RiUserFill className='icons'/>
                                             </div>
                                         </div>
-                                        
+
                                         <h3>Isaac Isewede</h3>
                                         <p>Hull, United Kingdom</p>
-                                        
+
                                     </div>
                                 </div>
                                 <div className="d-flex align-items-stretch mb-4 info-area">
                                     <div className="content-area">
-                                        <div className="icon-area">    
+                                        <div className="icon-area">
                                             <div className='icons-border'>
                                                 <FiShare2 className='icons'/>
                                             </div>
@@ -55,11 +57,11 @@ const Contact = () =>(
                                         </p>
                                     </div>
 
-    
+
                                 </div>
                                 <div className="d-flex align-items-stretch mb-4 info-area">
                                     <div className="content-area">
-                                        <div className="icon-area">    
+                                        <div className="icon-area">
                                             <div className='icons-border'>
                                                 <MdAlternateEmail className='icons'/>
                                             </div>
@@ -70,7 +72,7 @@ const Contact = () =>(
                                         </p>
                                     </div>
 
-    
+
                                 </div>
                             </Col>
                             <Col md={12} lg={6} >
@@ -91,7 +93,7 @@ const Contact = () =>(
                                                         <div className="validate email-validate"></div>
 
                                                     </Col>
-                                                    
+
                                                 </Row>
                                                 <Form.Group className="message-area">
                                                     <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message *"></textarea>
@@ -103,16 +105,16 @@ const Contact = () =>(
                                                     </button>
                                                 </div>
 
-                                          
+
                                             </Form>
-                                        
+
 
                                         </form>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
-                                
+
                             </Col>
 
                         </Row>
@@ -122,9 +124,12 @@ const Contact = () =>(
             </Col>
         </Row>
     </Container>
-    
+
    </div>
 
 );
 
 export default Contact
+*
+*
+* */

@@ -1,8 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Bg from './components/Background/Bg.view';
-import Home from './components/Home/Home.view';
+
 
 function App() {
   return (
