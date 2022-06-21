@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {useState} from "react";
+=======
+import React from "react";
+>>>>>>> 025e7a9ad3ffdd91b1f3fc1d49d7c677f30a0791
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {FaThList} from 'react-icons/fa'
 import './Drawer.styles.css'
@@ -8,6 +12,7 @@ import Header from "../Header/Header.view";
 
 
 
+<<<<<<< HEAD
  
 
 function Drawer() {
@@ -45,6 +50,40 @@ function Drawer() {
                     <span class="bar"></span>
                     
                     
+=======
+
+
+ 
+
+function Drawer() {
+
+  return (
+    
+            <nav className="navbar">
+                <ul className="nav-menu">
+                  <div className="link-area">
+                      <li className="nav-item">
+                          <a className="nav-link">Home</a>
+                      </li>
+                      
+                      <li className="nav-item">
+                          <a className="nav-link">About</a>
+                      </li>
+                      
+                      <li className="nav-item">
+                          <a className="nav-link">Portolio</a>
+                      </li>
+                      
+                      <li className="nav-item">
+                          <a className="nav-link">Contact</a>
+                      </li>
+                    </div>
+                </ul>
+                <div className="hamburger">
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+>>>>>>> 025e7a9ad3ffdd91b1f3fc1d49d7c677f30a0791
                 </div>
             </nav>
          
