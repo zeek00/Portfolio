@@ -6,17 +6,10 @@ import './hamburger'
 import { useNavigate } from 'react-router-dom';
 
 
-
-
-
-
-
- 
-
 function Drawer() {
+
     const navigate = useNavigate();
   return (
-    
             <nav className="navbar">
                 <ul className="nav-menu">
                   <div className="link-area">

@@ -9,8 +9,17 @@ body{
 
 }
 .content h2{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    font-weight: bold;
+    width: 21vw;
     margin: 40vh 0 0 0;
+}
+
+.content h2:hover{
+    color: rgb(255,23,55);
+    transition: 0.3s ease;
+    cursor: none;
+
 }
 
 .name, h2{
@@ -62,7 +71,7 @@ body{
             text-align: center;
             font-size: 2rem;
             color: #fff;
-            font-family: Consolas;
+
         }
         
     }
@@ -86,7 +95,7 @@ body{
 
         }
         .content h2{
-            margin: 40vh 0 0 0;
+            margin: 30vh 0 0 0;
         }
 
         .content .social-link-box{

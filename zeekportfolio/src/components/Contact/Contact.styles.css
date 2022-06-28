@@ -1,6 +1,4 @@
-*{
-    font-family: Consolas;
-}
+
 
 .contact{
     z-index: 1;
@@ -17,12 +15,20 @@
     background-color: rgb(0,0,0,0.9);
     height: auto;
 
+}
 
-    
+.contact-area h5{
+    text-align: left;
+    color: rgba(255,255,255,0.6);
+}
+
+.dot{
+    color: #ff1737;
+    font-size: 1.5rem;
 }
 
 .section-title{
-    margin-left: 25px;
+
     text-align: left;
 }
 
@@ -167,13 +173,14 @@
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    body{
-        overflow: hidden;
-    }
+
 
     .contact-area{
+        padding: 2%;
         background-color: rgb(0,0,0,0.9);
-        height: 70vh;
+        margin-top: 8vh;
+
+
     }
 
     
