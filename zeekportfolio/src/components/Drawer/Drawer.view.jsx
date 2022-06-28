@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 import React, {useState} from "react";
-=======
+
 import React from "react";
->>>>>>> 025e7a9ad3ffdd91b1f3fc1d49d7c677f30a0791
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {FaThList} from 'react-icons/fa'
 import './Drawer.styles.css'
@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-<<<<<<< HEAD
+
  
 
 function Drawer() {
@@ -51,15 +51,15 @@ function Drawer() {
                     <span class="bar"></span>
                     
                     
-=======
+
 
 
  
 
 function Drawer() {
+
     const navigate = useNavigate();
   return (
-    
             <nav className="navbar">
                 <ul className="nav-menu">
                   <div className="link-area">
@@ -84,7 +84,7 @@ function Drawer() {
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
->>>>>>> 025e7a9ad3ffdd91b1f3fc1d49d7c677f30a0791
+
                 </div>
             </nav>
          

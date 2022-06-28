@@ -2,21 +2,26 @@
   font-family: 'Consolas', serif;
 }
 
-body {
-  background-image: url('../src/assets/bg/bg-main.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: auto;
-  overflow: scroll;
-
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container{
+  padding-right: var(--bs-gutter-x,0rem);
+  padding-left: var(--bs-gutter-x,0rem);
 }
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@media (min-width: 992px) {
+  .container{
+    padding-right: var(--bs-gutter-x,6rem);
+    padding-left: var(--bs-gutter-x,6rem);
+  }
+
+
+
 }
