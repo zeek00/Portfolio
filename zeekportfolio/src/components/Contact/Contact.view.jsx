@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.styles.css'
-import Header from '../Header/Header.view';
 import { useNavigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,6 +10,7 @@ import {MdAlternateEmail} from 'react-icons/md'
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter,AiOutlineDribbble } from 'react-icons/ai';
 import Form from 'react-bootstrap/Form'
 import Drawer from "../Drawer/Drawer.view";
+import NavigationView from "../Navigation/Navigation.view";
 
 
 function Contact () {
@@ -18,32 +18,13 @@ function Contact () {
     return(
 
    <div className='contact'>
-       <nav className="header-container">
+
+       <div className="drawercomp">
            <Drawer/>
-       </nav>
-
-       <div className="wrapper">
-           <ul className="nav-menu">
-               <div className="link-area">
-                   <li className="nav-item">
-                       <a onClick={()=>{navigate('/home')}}  className="nav-link">Home</a>
-                   </li>
-
-                   <li className="nav-item">
-                       <a onClick={()=>{navigate('/about')}} className="nav-link">About</a>
-                   </li>
-
-                   <li className="nav-item">
-                       <a onClick={()=>{navigate('/portfolio')}}  className="nav-link">Portolio</a>
-                   </li>
-
-                   <li className="nav-item">
-                       <a onClick={()=>{navigate('/contact')}} className="nav-link">Contact</a>
-                   </li>
-               </div>
-           </ul>
        </div>
-
+       <div className="wrapper">
+           <NavigationView/>
+       </div>
 
     <Container>
         <section className="contact-area">
@@ -101,7 +82,7 @@ function Contact () {
                                                 </div>
                                                 <h3>Email</h3>
                                                 <p>
-                                                    ukzeek0@gmail.com
+                                                    isaac.isewede@gmail.com
                                                 </p>
                                             </div>
 

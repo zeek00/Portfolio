@@ -11,35 +11,19 @@ import {TbAtomOff} from "react-icons/tb"
 import aboutimage from "../../assets/zeek.JPG"
 import {COLOR} from "rsuite/utils";
 import {RiFolderMusicFill} from "react-icons/ri";
+import {BiAtom} from "react-icons/bi";
+import NavigationView from "../Navigation/Navigation.view";
 
 
 function About() {
     const navigate = useNavigate();
     return(
         <div className="about">
-            <nav className="header-container">
+            <div className="drawercomp">
                 <Drawer/>
-            </nav>
+            </div>
             <div className="wrapper">
-                <ul className="nav-menu">
-                    <div className="link-area">
-                        <li className="nav-item">
-                            <a onClick={()=>{navigate('/home')}}  className="nav-link">Home</a>
-                        </li>
-
-                        <li className="nav-item">
-                            <a onClick={()=>{navigate('/about')}} className="nav-link">About</a>
-                        </li>
-
-                        <li className="nav-item">
-                            <a onClick={()=>{navigate('/portfolio')}}  className="nav-link">Portfolio</a>
-                        </li>
-
-                        <li className="nav-item">
-                            <a onClick={()=>{navigate('/contact')}} className="nav-link">Contact</a>
-                        </li>
-                    </div>
-                </ul>
+                <NavigationView/>
             </div>
             <Container>
                 <section className="contact-area">
@@ -135,7 +119,7 @@ function About() {
                                 </h6>
                             </div>
                             <div className="interests-wrap">
-                                <TbAtomOff style={{
+                                <BiAtom style={{
                                     color: '#2b3ff2',
                                     margin: '0 auto',
                                 }

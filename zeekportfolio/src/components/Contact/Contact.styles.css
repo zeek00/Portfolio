@@ -15,6 +15,7 @@
     background-color: rgb(0,0,0,0.9);
     height: auto;
 
+
 }
 
 .contact-area h5{
@@ -81,7 +82,7 @@
 .icons-border{
     width: 50px;
     height: 50px;
-    padding: 12px 0px;
+    padding: 12px 0;
     text-align: center;
     background-color: rgba(255,255,255,0.1);
     border-radius: 50%;
@@ -93,12 +94,12 @@
 }
 
 .social-acc-icons{
-    margin: 0px 10px 0 0;
+    margin: 0 10px 0 0;
     font-size: 1.2em;
 }
 
 #contact-form{
-    padding: 5px 15px 0px 15px;
+    padding: 5px 15px 0 15px;
 }
 
 .contact-form input, textarea{
@@ -152,7 +153,11 @@
 
 
 @media (min-width: 576px) {
-    
+    .contact-area{
+        overflow: scroll;
+        background-color: rgb(0,0,0,0.9);
+
+    }
     
 
 
@@ -164,8 +169,9 @@
 
     /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+
     .contact-area{
-        
+        overflow: scroll;
         background-color: rgb(0,0,0,0.9);
        
     }

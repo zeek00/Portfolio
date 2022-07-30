@@ -1,41 +1,45 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {FaThList} from 'react-icons/fa'
-import './Drawer.styles.css'
-import './hamburger'
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
+import styled from "styled-components";
+import Burger from "./Burger";
 
 
-function Drawer() {
+const Nav = styled.nav`
+    .wrapper{
+      display: none;
+    }
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(0,0,0,0.7);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+  
+    .logo{
+      padding: 15px 0;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+    
+`;
+
+const Drawer = () => {
 
     const navigate = useNavigate();
   return (
-            <nav className="navbar">
-                <ul className="nav-menu">
-                  <div className="link-area">
-                      <li className="nav-item">
-                          <a onClick={()=>{navigate('/home')}}  className="nav-link">Home</a>
-                      </li>
-
-                      <li className="nav-item">
-                          <a onClick={()=>{navigate('/about')}} className="nav-link">About</a>
-                      </li>
-                      
-                      <li className="nav-item">
-                          <a onClick={()=>{navigate('/portfolio')}}  className="nav-link">Portolio</a>
-                      </li>
-                      
-                      <li className="nav-item">
-                          <a onClick={()=>{navigate('/contact')}} className="nav-link">Contact</a>
-                      </li>
-                    </div>
-                </ul>
-                <div className="hamburger">
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
+            <Nav>
+                <div className="logo">
+                    Isaac Isewede
                 </div>
-            </nav>
+                <Burger/>
+
+
+
+            </Nav>
          
     
    
