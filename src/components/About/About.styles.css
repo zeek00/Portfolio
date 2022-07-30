@@ -1,0 +1,170 @@
+
+body{
+    overflow: scroll;
+    height: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 0.8em;
+
+
+
+}
+::-webkit-scrollbar-track{
+    background: rgb(0,0,0,0.9);
+
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(255,23,55);
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(255,23,55,0.7);
+
+}
+
+
+.img-style{
+    width: 100%;
+    height: auto;
+    background: #0a53be;
+}
+.experience{
+    background: #86b7fe;
+    height: 43vh;
+}
+.skills{
+    width: 100%;
+}
+.skills-wrap {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    padding: 2vh;
+    margin: 0 0 5vh 0;
+}
+
+.interests-wrap{
+    background-color: rgba(255, 255, 255, 0.08);
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 1vh;
+    width: 35%;
+}
+
+.interests-wrap, h6{
+    color: #fff;
+    margin-bottom: 0;
+
+
+}
+
+
+.skills-icon{
+    font-size: 2rem;
+    margin: 0 2vw 0 0;
+}
+
+.skills-wrap h6{
+    display: inline;
+    font-size: 1.2rem;
+}
+
+.top{
+    margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    .skills-wrap {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        padding: 2vh;
+        margin: 0 0 2vh 2vh;
+        width: 40%;
+
+    }
+    .skills-wrap h6{
+        font-size: 1rem;
+    }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+   body{
+       overflow: scroll;
+       height: auto;
+       overflow-x: hidden;
+   }
+
+    ::-webkit-scrollbar{
+        width: 0.8em;
+        display: block;
+
+
+    }
+    ::-webkit-scrollbar-track{
+        background: rgb(0,0,0,0.9);
+
+    }
+    ::-webkit-scrollbar-thumb{
+        background: rgb(255,23,55);
+
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background: rgb(255,23,55,0.7);
+
+    }
+
+    .bio{
+        background: #0c4128;
+    }
+
+    .experience{
+        background: #86b7fe;
+        height: 43vh;
+    }
+
+    .skills-wrap {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        padding: 2vh;
+
+
+    }
+    .skills-wrap h6{
+        font-size: 1rem;
+    }
+
+    .interests-wrap{
+        background-color: rgba(255, 255, 255, 0.08);
+        display: inline-block;
+        padding: 1vh;
+        width: 20%;
+    }
+
+
+
+
+
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+}
