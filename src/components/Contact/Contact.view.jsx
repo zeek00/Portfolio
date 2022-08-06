@@ -22,6 +22,7 @@ function Contact () {
        <div className="drawercomp">
            <Drawer/>
        </div>
+
        <div className="wrapper">
            <NavigationView/>
        </div>
