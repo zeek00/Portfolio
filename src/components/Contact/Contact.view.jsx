@@ -65,7 +65,6 @@ function Contact () {
                                                 </div>
                                                 <h3>Social Accounts</h3>
                                                 <p>
-
                                                     <a href="https://github.com/zeek00">
                                                         <AiFillGithub className='social-acc-icons'/>
                                                     </a>
