@@ -8,6 +8,7 @@
     }
 
     .nav-menu, .link-area{
+        cursor: pointer;
         padding: 0;
         list-style-type: none;
         display: flex;

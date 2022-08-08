@@ -22,6 +22,7 @@ function Contact () {
        <div className="drawercomp">
            <Drawer/>
        </div>
+
        <div className="wrapper">
            <NavigationView/>
        </div>
@@ -64,10 +65,19 @@ function Contact () {
                                                 </div>
                                                 <h3>Social Accounts</h3>
                                                 <p>
-                                                <AiFillGithub className='social-acc-icons'/>
-                                                <AiFillLinkedin className='social-acc-icons'/>
-                                                <AiOutlineTwitter className='social-acc-icons'/>
-                                                <AiOutlineDribbble className='social-acc-icons'/>
+
+                                                    <a href="https://github.com/zeek00">
+                                                        <AiFillGithub className='social-acc-icons'/>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/isaacisewede/">
+                                                        <AiFillLinkedin className='social-acc-icons'/>
+                                                    </a>
+                                                    <a href="https://twitter.com/datboy_zeek">
+                                                        <AiOutlineTwitter className='social-acc-icons'/>
+                                                    </a>
+                                                    <a href="https://dribbble.com/swirl_xx">
+                                                        <AiOutlineDribbble className='social-acc-icons'/>
+                                                    </a>
                                                 </p>
                                             </div>
 

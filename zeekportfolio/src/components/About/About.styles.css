@@ -28,11 +28,11 @@ body{
 .img-style{
     width: 100%;
     height: auto;
-    background: #0a53be;
 }
 .experience{
-    background: #86b7fe;
-    height: 43vh;
+    color: #fff;
+    margin-top: 20px;
+
 }
 .skills{
     width: 100%;
@@ -80,7 +80,15 @@ body{
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
+    .img-style{
+        width: 50%;
+        opacity: 0.4;
+        height: auto;
+    }
+    .img-style:hover{
+        opacity: 0.9;
+        transition: 1s ease-in;
+    }
     .skills-wrap {
         display: inline-block;
         background-color: rgba(255, 255, 255, 0.08);
@@ -124,13 +132,9 @@ body{
 
     }
 
-    .bio{
-        background: #0c4128;
-    }
 
     .experience{
-        background: #86b7fe;
-        height: 43vh;
+        height: auto;
     }
 
     .skills-wrap {

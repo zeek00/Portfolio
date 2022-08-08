@@ -19,6 +19,7 @@
 }
 
 .contact-area h5{
+    cursor: none;
     text-align: left;
     color: rgba(255,255,255,0.6);
 }
@@ -29,13 +30,14 @@
 }
 
 .section-title{
-
+    cursor: none;
     text-align: left;
 }
 
 
 
 .info-area{
+    cursor: none;
     padding: 15px 0 0 0;
     background-color: rgba(255,255,255,0.1);
     
@@ -45,6 +47,11 @@
     width: 100%;
     padding: 1px;
     height: inherit;
+
+}
+
+.contact-area a{
+    color: #fff;
 }
 
 .icon-area{
@@ -94,8 +101,16 @@
 }
 
 .social-acc-icons{
+    transition: 0.3s ease;
     margin: 0 10px 0 0;
     font-size: 1.2em;
+}
+.social-acc-icons:hover {
+    background-color: rgb(0,0,0,0.3);
+    transform: scale(1.2);
+    color: #ff1737;
+    cursor: pointer;
+
 }
 
 #contact-form{
