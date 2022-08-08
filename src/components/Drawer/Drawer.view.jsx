@@ -35,7 +35,7 @@ const Drawer = () => {
   return (
             <Nav>
                 <div className="logo">
-                    <img src={logo} alt=""/>
+                    <img onClick={()=>{navigate('/home')}} src={logo} alt=""/>
                 </div>
                 <Burger/>
 
