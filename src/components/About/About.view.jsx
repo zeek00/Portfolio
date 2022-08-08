@@ -29,15 +29,15 @@ function About() {
                 <section className="contact-area">
                     <h5>About me <span className='dot'>.</span><span className='dot'>.</span><span className='dot'>.</span><span className='dot'>.</span></h5>
                 <Row>
-                        <Col md={12} lg={4} >
+                        <Col md={12} lg={12} >
                             <div className="img bio">
                                 <img src={aboutimage} className="img-style" alt="img place"/>
                             </div>
                         </Col>
 
-                    <Col md={12} lg={8}>
+                    <Col md={12} lg={12}>
                         <div className="experience">
-                            Experience
+                            <p>I am Isaac a Tech-Enthusiast with knowledge curated over years of working in the industry designing and developing web applications and software systems. </p>
                         </div>
                     </Col>
 
