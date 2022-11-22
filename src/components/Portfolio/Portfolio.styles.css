@@ -1,4 +1,51 @@
 
+.portfolio-area{
+    position: relative;
+    padding: 5%;
+    margin-top: 12vh;
+    height: auto;
+
+
+}
+.design{
+    background: rgb(0,0,0,0.6);
+    position: relative;
+    color: #ccc;
+    font-size: 17vh;
+    height: 40vh;
+    margin-bottom: 10vh;
+
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+
+}
+
+.title, a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.title a:hover{
+    color: #000;
+}
+
+.title:hover{
+    background: rgb(255,23,55);
+    color: #000;
+}
+
+.title p{
+    font-size: 4vh;
+}
+
 
 @media (min-width: 576px) {
 
@@ -11,8 +58,40 @@
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+    .portfolio-area{
+        position: relative;
+        padding: 5%;
+        margin: 8vh auto;
+        height: auto;
+        width: 80%;
 
 
+    }
+
+
+    .design{
+        background: rgb(0,0,0,0.6);
+        position: relative;
+        color: #ccc;
+        font-size: 10vh;
+        width: 60%;
+        height: 25vh;
+        cursor: pointer;
+    }
+
+    .title{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid #ccc;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+
+    }
+    .title p{
+        font-size: 3vh;
+    }
 
 
 

@@ -14,7 +14,7 @@ const Social = () =>(
                 
           
                 <div className="social-link-box">
-                    <AiFillGithub href='https://github.com/zeek00' className='social-icons'/>
+                    <AiFillGithub className='social-icons'/>
                     <AiFillLinkedin className='social-icons'/>
                     <AiOutlineTwitter className='social-icons'/>
                     <AiOutlineDribbble className='social-icons'/>
