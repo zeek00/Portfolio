@@ -31,8 +31,11 @@ body{
     background: #0a53be;
 }
 .experience{
-    background: #86b7fe;
-    height: 43vh;
+    margin-top: 30px;
+    text-align: left;
+}
+.experience p{
+    color: #fff;
 }
 .skills{
     width: 100%;
@@ -73,6 +76,8 @@ body{
 .top{
     margin-top: 20px;
 }
+
+
 
 @media (min-width: 576px) {
 
@@ -124,14 +129,20 @@ body{
 
     }
 
-    .bio{
-        background: #0c4128;
+    .img{
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
     }
 
     .experience{
-        background: #86b7fe;
-        height: 43vh;
+        margin-top: 0;
     }
+
+    .experience p{
+        text-align: justify;
+    }
+
 
     .skills-wrap {
         display: inline-block;

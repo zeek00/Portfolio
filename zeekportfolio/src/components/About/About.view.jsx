@@ -29,15 +29,15 @@ function About() {
                 <section className="contact-area">
                     <h5>About me <span className='dot'>.</span><span className='dot'>.</span><span className='dot'>.</span><span className='dot'>.</span></h5>
                 <Row>
-                        <Col md={12} lg={4} >
+                        <Col md={12} lg={12} >
                             <div className="img bio">
                                 <img src={aboutimage} className="img-style" alt="img place"/>
                             </div>
                         </Col>
 
-                    <Col md={12} lg={8}>
+                    <Col md={12} lg={12}>
                         <div className="experience">
-                            Experience
+                            <p>Innovative Full stack developer with a Master's degree In Advanced Computer Science. Fortified with knowledge and experience in the implementation, design and development of web applications and software systems using languages such as React JS, HTML, CSS, JavaScript. Organized, meticulous and resourceful with an innovative approach to the development and project lifecycle, an enthusiastic team player able to collaborate as part of a team or work individually and capable of learning new technologies. </p>
                         </div>
                     </Col>
 
