@@ -28,11 +28,14 @@ body{
 .img-style{
     width: 100%;
     height: auto;
+    background: #0a53be;
 }
 .experience{
+    margin-top: 30px;
+    text-align: left;
+}
+.experience p{
     color: #fff;
-    margin-top: 20px;
-
 }
 .skills{
     width: 100%;
@@ -74,16 +77,14 @@ body{
     margin-top: 20px;
 }
 
+
+
 @media (min-width: 576px) {
 
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .img-style{
-        width: 50%;
-        height: auto;
-    }
 
     .skills-wrap {
         display: inline-block;
@@ -128,10 +129,20 @@ body{
 
     }
 
+    .img{
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+    }
 
     .experience{
-        height: auto;
+        margin-top: 0;
     }
+
+    .experience p{
+        text-align: justify;
+    }
+
 
     .skills-wrap {
         display: inline-block;

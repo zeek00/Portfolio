@@ -5,9 +5,12 @@ const Ul = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: row-reverse;
+  padding: 0;
     
     li{
-      margin: 70px 0;
+      margin: 70px auto;
+      width: 50%;
+      
         
     }
     @media (max-width: 999px){
@@ -24,14 +27,23 @@ const Ul = styled.ul`
       
       .nav-link{
         color: #fff;
+        cursor: pointer;
+        
+        
       }
+      .nav-link:hover{
+        background-color: #ff1737;
+        
+        
+      }
+      
     }
 `;
 const RightNav = ({open}) => {
     const navigate = useNavigate();
     return(
         <Ul open={open} >
-            <div >
+            <div className="link-box" >
                 <li >
                     <a onClick={()=>{navigate('/home')}}  className="nav-link">Home</a>
                 </li>

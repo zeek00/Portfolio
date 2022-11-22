@@ -37,7 +37,7 @@ function About() {
 
                     <Col md={12} lg={12}>
                         <div className="experience">
-                            <p>I am Isaac a Tech-Enthusiast with knowledge curated over years of working in the industry designing and developing web applications and software systems. </p>
+                            <p>Innovative Full stack developer with a Master's degree In Advanced Computer Science. Fortified with knowledge and experience in the implementation, design and development of web applications and software systems using languages such as React JS, HTML, CSS, JavaScript. Organized, meticulous and resourceful with an innovative approach to the development and project lifecycle, an enthusiastic team player able to collaborate as part of a team or work individually and capable of learning new technologies. </p>
                         </div>
                     </Col>
 

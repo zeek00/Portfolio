@@ -19,7 +19,6 @@
 }
 
 .contact-area h5{
-    cursor: none;
     text-align: left;
     color: rgba(255,255,255,0.6);
 }
@@ -30,16 +29,16 @@
 }
 
 .section-title{
-    cursor: none;
+
     text-align: left;
 }
 
 
 
 .info-area{
-    cursor: none;
     padding: 15px 0 0 0;
     background-color: rgba(255,255,255,0.1);
+
     
 }
 
@@ -47,11 +46,6 @@
     width: 100%;
     padding: 1px;
     height: inherit;
-
-}
-
-.contact-area a{
-    color: #fff;
 }
 
 .icon-area{
@@ -80,7 +74,6 @@
     text-align: left;
     font-size: 1rem;
     margin-top: -8px;
-    margin-left: 80px;
     color: rgba(255,255,255);
 }
 
@@ -101,16 +94,8 @@
 }
 
 .social-acc-icons{
-    transition: 0.3s ease;
     margin: 0 10px 0 0;
     font-size: 1.2em;
-}
-.social-acc-icons:hover {
-    background-color: rgb(0,0,0,0.3);
-    transform: scale(1.2);
-    color: #ff1737;
-    cursor: pointer;
-
 }
 
 #contact-form{
@@ -157,13 +142,21 @@
 
 }
 
-.send-message-btn{
+#send-message-btn{
     background-color: #ff1737;
     margin-top: 10px;
     border: none;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
+}
+
+.error{
+    color: #ff1737!important;
+    display: block;
+    width: max-content;
+    text-align: center;
+
 }
 
 
@@ -173,7 +166,6 @@
         background-color: rgb(0,0,0,0.9);
 
     }
-
 }
 
     /* Medium devices (tablets, 768px and up)*/
@@ -188,14 +180,20 @@
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
-
     .contact-area{
         padding: 2%;
         background-color: rgb(0,0,0,0.9);
         margin-top: 8vh;
+    }
 
+    #send-message-btn{
+        padding: 7px 7px;
 
+    }
+
+    .error p{
+       font-size: 1em;
+        color: black;
     }
 
     
