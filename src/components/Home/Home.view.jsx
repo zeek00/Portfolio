@@ -41,11 +41,18 @@ function Home() {
                     <Col  md={12} lg={5} className='social-links'>
 
                         <div className="social-link-box">
-                            <AiFillGithub className='social-icons'/>
-                            <AiFillLinkedin className='social-icons'/>
-                            <AiOutlineTwitter className='social-icons'/>
-                            <AiOutlineDribbble className='social-icons'/>
-
+                            <a target={"_blank"} href="https://github.com/zeek00">
+                                <AiFillGithub className='social-icons'/>
+                            </a>
+                            <a target={"_blank"} href="https://www.linkedin.com/in/isaacisewede/">
+                                <AiFillLinkedin className='social-icons'/>
+                            </a>
+                            <a target={"_blank"} href="https://twitter.com/datboy_zeek">
+                                <AiOutlineTwitter className='social-icons'/>
+                            </a>
+                            <a target={"_blank"} href="https://dribbble.com/swirl_xx">
+                                <AiOutlineDribbble className='social-icons'/>
+                            </a>
                         </div>
                     </Col>
                   </div>
