@@ -20,11 +20,7 @@
     animation: 0;
 }
 
-.home{
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
+
 .wrapper{
     display: none;
 }
