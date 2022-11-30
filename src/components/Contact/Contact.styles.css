@@ -1,5 +1,9 @@
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .contact h2{
     color: white;
@@ -33,22 +37,37 @@
 
 
 .info-area{
-    padding: 15px 0 0 0;
     background-color: rgba(255,255,255,0.1);
 
     
 }
 
 .content-area{
+    display: flex;
     width: 100%;
-    padding: 1px;
+    padding-top: 10px;
     height: inherit;
 }
 
+.contact-area form{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    flex-flow: column wrap;
+}
+
 .icon-area{
-    float: left;
+
     padding-left: 10px;
-    width: 20%;
+    margin-top: 3px;
+    width: 10%;
+}
+
+
+.info{
+    width: 90%;
+
+
 }
 
 
@@ -59,18 +78,20 @@
     height: auto;
 }
 
-.content-area h3{
+
+.info h3, p{
     font-size: 1.5rem;
+    align-items: flex-start;
     text-align: left;
-    margin-left: 80px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255);
+    margin-left: 50px;
 }
 
-.content-area p{
-   
-    text-align: left;
+.info p{
+    flex-direction: row;
+    justify-content: flex-start;
     font-size: 1rem;
-    margin-top: -8px;
+    margin-top: -4px;
     color: rgba(255,255,255);
 }
 
@@ -157,11 +178,19 @@
 }
 
 
-@media (min-width: 576px) {
+@media (max-width: 414px) {
+    .info h3, p{
+        margin-left: 40px;
+    }
+
+}@media (min-width: 576px) {
     .contact-area{
         overflow: scroll;
         background-color: rgb(0,0,0,0.9);
 
+    }
+    .info h3, p{
+        margin-left: 50px;
     }
 }
 
@@ -173,6 +202,9 @@
         background-color: rgb(0,0,0,0.9);
        
     }
+    .info h3, p{
+        margin-left: 50px;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -181,6 +213,9 @@
         padding: 2%;
         background-color: rgb(0,0,0,0.9);
         margin-top: 8vh;
+    }
+    .info h3, p{
+        margin-left: 50px;
     }
 
     #send-message-btn{
