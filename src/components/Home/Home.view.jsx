@@ -1,4 +1,4 @@
-import React from "react";
+import {React} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
@@ -8,15 +8,19 @@ import './Home.style.css'
 import Drawer from "../Drawer/Drawer.view";
 import {AiFillGithub, AiFillLinkedin, AiOutlineDribbble, AiOutlineTwitter} from "react-icons/ai";
 import NavigationView from "../Navigation/Navigation.view";
-
+import doodle from "../../assets/svg/portfoliodoodle.svg"
+import Typewriter from "typewriter-effect";
 
 
 
 function Home() {
     const navigate = useNavigate();
-  return (
 
+
+
+    return (
       <div className="home">
+
           <div className="drawercomp">
               <Drawer/>
           </div>
@@ -28,13 +32,29 @@ function Home() {
 
           <Container>
               <Row>
+                  <Col md={12}  lg={7}>
+                      <div className="doodle-container">
+                          <img src={doodle}  alt="SVG logo image"/>
+                          {/*<img src={man} className="man" alt="SVG logo image"/>*/}
+                      </div>
+                  </Col>
+
                   <div className="content">
                     <Col  md={12}  lg={7} >
                       <h2>Isaac Isewede</h2>
                       <div className="intro">
                           <h1>I'm a </h1>
-                          <h1 id="typing"> Developer
-                          </h1>
+                          <div className='auto-type'>
+                              <Typewriter
+                                  style={{color: 'red'}}
+                                  options={{
+                                      strings: ["Developer", "Creative", "Freelancer" ],
+                                      autoStart: true,
+                                      loop: true,
+
+                                  }}
+                                 />
+                              </div>
                       </div>
                     </Col>
 
