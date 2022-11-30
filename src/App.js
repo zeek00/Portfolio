@@ -12,12 +12,14 @@ import Contact from "./components/Contact/Contact.view";
 import Home from "./components/Home/Home.view";
 import About from "./components/About/About.view";
 import Portfolio from "./components/Portfolio/Portfolio.view";
+import Learn from "./components/statePropsTutorial/stateprops";
 
 function App() {
   return (
       <div className="App">
           <BrowserRouter>
               <Routes>
+                  {/*<Route path='stateprops' element={<Learn/>}/>*/}
                   <Route path="/"  element={<Bg />}/>
                   <Route path="/home"  element={<Home/>}/>
                   <Route path="/contact"  element={<Contact/>}/>
