@@ -1,12 +1,38 @@
+.typed-cursor{
+    display: none;
+    color: red;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+}
+.typed-fade-out{
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
+}
 
 
 .wrapper{
     display: none;
 }
 .content{
+    z-index: 2;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
     display: flex;
     align-content: center;
     flex-direction: column;
+
 
 
 }
@@ -15,6 +41,7 @@
     font-weight: bold;
     width: 100%;
     margin: 30vh 0 0 0;
+    z-index: 7;
 }
 
 
@@ -32,17 +59,54 @@
 
 }
 
+.doodle-container{
+    position: fixed;
+    width: 100%;
+    height: 230px;
+    margin: 0 auto;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+
+}
+
+.doodle-container img{
+    position: relative;
+    animation: doodle 20s linear infinite;
+}
+
+@keyframes doodle {
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
 .intro{
     display: flex;
     justify-content: center;
+    z-index: 5;
 
 }
 
 .intro h1{
+    display: block;
     color: rgba(255,255,255,0.6);
     font-size: 1.5rem;
+    margin-top: 3px;
+    height: fit-content;
     margin-right: 10px;
     font-weight: 400;
+}
+
+.auto-type{
+
+    font-weight: 700;
+    height: fit-content;
+    font-size: 1.5rem;
+    color: #ff1737;
 }
 
 
@@ -62,6 +126,7 @@
     cursor: pointer;
 
 }
+
 
 
 
@@ -99,7 +164,6 @@
             text-align: center;
             font-size: 2rem;
             color: #fff;
-
         }
         .intro{
             justify-content: center;
@@ -108,6 +172,10 @@
     
     /*Large devices (desktops, 992px and up)*/
     @media (min-width: 992px) {
+        .doodle-container{
+            display: none;
+        }
+
         .wrapper{
             display: block;
         }
@@ -117,9 +185,6 @@
         ::-webkit-scrollbar{
             width: 0.8em;
             display: none;
-
-
-
         }
 
         .intro{
@@ -132,26 +197,25 @@
             text-align: left;
             font-size: 2rem;
             color: #fff;
-
         }
 
         .header-container{
             display: none;
-
         }
         .content h2{
             margin: 30vh 0 0 0;
         }
 
-        .content .social-link-box{
+        .content{
+            left: 100px;
+        }
 
+        .content .social-link-box{
             position: absolute;
             top: 30vh;
             right: 20vw;
             font-size: 1.7em;
             margin: 0;
-
-
         }
 
         .social-icons{
@@ -160,7 +224,6 @@
             color: white;
             border-radius: 50px;
             margin: 1rem 0;
-
             padding: 2px;
         }
      }

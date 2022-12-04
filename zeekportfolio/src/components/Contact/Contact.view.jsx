@@ -139,9 +139,10 @@ function Contact () {
                                                             <RiUserFill className='icons'/>
                                                         </div>
                                                     </div>
-
-                                                    <h3>Isaac Isewede</h3>
-                                                    <p>Hull, United Kingdom</p>
+                                                    <div className="info">
+                                                        <h3>Isaac Isewede</h3>
+                                                        <p>Hull, United Kingdom</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div className="d-flex align-items-stretch mb-4 info-area">
@@ -151,13 +152,15 @@ function Contact () {
                                                             <FiShare2 className='icons'/>
                                                         </div>
                                                     </div>
-                                                    <h3>Social Accounts</h3>
-                                                    <p>
-                                                    <AiFillGithub className='social-acc-icons'/>
-                                                    <AiFillLinkedin className='social-acc-icons'/>
-                                                    <AiOutlineTwitter className='social-acc-icons'/>
-                                                    <AiOutlineDribbble className='social-acc-icons'/>
-                                                    </p>
+                                                    <div className="info">
+                                                        <h3>Social Accounts</h3>
+                                                        <p>
+                                                        <AiFillGithub className='social-acc-icons'/>
+                                                        <AiFillLinkedin className='social-acc-icons'/>
+                                                        <AiOutlineTwitter className='social-acc-icons'/>
+                                                        <AiOutlineDribbble className='social-acc-icons'/>
+                                                        </p>
+                                                    </div>
                                                 </div>
 
 
@@ -169,10 +172,10 @@ function Contact () {
                                                             <MdAlternateEmail className='icons'/>
                                                         </div>
                                                     </div>
-                                                    <h3>Email</h3>
-                                                    <p>
-                                                        isaac.isewede@gmail.com
-                                                    </p>
+                                                    <div className="info">
+                                                        <h3>Email</h3>
+                                                        <p>isaac.isewede@gmail.com</p>
+                                                    </div>
                                                 </div>
 
 
