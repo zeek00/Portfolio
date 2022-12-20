@@ -105,14 +105,14 @@ body{
 @media (min-width: 992px) {
 
    body{
-       overflow: scroll;
+
        height: auto;
        overflow-x: hidden;
    }
 
     ::-webkit-scrollbar{
         width: 0.8em;
-        display: block;
+        display: flex;
 
 
     }

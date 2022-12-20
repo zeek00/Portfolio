@@ -19,7 +19,7 @@ function App() {
       <div className="App">
           <BrowserRouter>
               <Routes>
-                  {/*<Route path='stateprops' element={<Learn/>}/>*/}
+                  <Route path='stateprops' element={<Learn/>}/>
                   <Route path="/"  element={<Bg />}/>
                   <Route path="/home"  element={<Home/>}/>
                   <Route path="/contact"  element={<Contact/>}/>

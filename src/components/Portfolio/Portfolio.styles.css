@@ -8,18 +8,18 @@
 
 }
 .design{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
     background: rgb(0,0,0,0.6);
-    position: relative;
     color: #ccc;
     font-size: 17vh;
-    height: 40vh;
     margin-bottom: 10vh;
 
 }
 
+
 .title{
-    position: absolute;
-    bottom: 0;
     width: 100%;
     border-top: 1px solid #ccc;
     border-bottom: none;
@@ -28,14 +28,12 @@
 
 }
 
-.title, a{
+.title a{
     text-decoration: none;
     color: #fff;
 }
 
-.title a:hover{
-    color: #000;
-}
+
 
 .title:hover{
     background: rgb(255,23,55);
@@ -44,6 +42,13 @@
 
 .title p{
     font-size: 4vh;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.modal-dialog{
+    
 }
 
 
@@ -62,26 +67,25 @@
         position: relative;
         padding: 5%;
         margin: 8vh auto;
+        display: flex;
         height: auto;
         width: 80%;
-
-
     }
 
 
     .design{
         background: rgb(0,0,0,0.6);
-        position: relative;
         color: #ccc;
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-items: center;
         font-size: 10vh;
-        width: 60%;
-        height: 25vh;
         cursor: pointer;
     }
 
     .title{
-        position: absolute;
-        bottom: 0;
         width: 100%;
         border-top: 1px solid #ccc;
         border-bottom: none;
@@ -91,6 +95,7 @@
     }
     .title p{
         font-size: 3vh;
+        text-align: center;
     }
 
 
