@@ -3,7 +3,6 @@
     position: relative;
     padding: 5%;
     margin-top: 12vh;
-
     height: auto;
 
 
@@ -46,6 +45,10 @@
     width: 100%;
     text-align: center;
     margin: 0;
+}
+
+.modal-dialog{
+    
 }
 
 

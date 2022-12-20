@@ -5,14 +5,21 @@ import Drawer from "../Drawer/Drawer.view";
 import NavigationView from "../Navigation/Navigation.view";
 import File from './File'
 
+
 function Portfolio() {
-    const navigate = useNavigate();
-    const content =[
-        {name: 'Graphic Designs', link:'https://drive.google.com/drive/folders/1pZIW-rTXZBhxgW7v4qph4B6RPgQdqfYP?usp=sharing'},
-        {name: 'CV', link:'https://drive.google.com/drive/folders/1pZIW-rTXZBhxgW7v4qph4B6RPgQdqfYP?usp=share_link'},
-        {name: 'Projects', link: 'https://github.com/zeek00'},
+    useNavigate();
+    const content = [
+        {id:1, name: 'Graphic Designs', link:'https://drive.google.com/drive/folders/1pZIW-rTXZBhxgW7v4qph4B6RPgQdqfYP?usp=sharing'},
+        {id:2, name: 'CV', link:'https://drive.google.com/drive/folders/1pZIW-rTXZBhxgW7v4qph4B6RPgQdqfYP?usp=share_link'},
+        {id:3, name: 'Projects', link: 'https://github.com/zeek00'},
     ]
-    const [click, setClicked] = useState(false);
+
+    const contentViewer = (id)=>{
+        console.log('this is' + id);
+        
+    }
+    
+    
     return(
         <div className="portfolio">
             <div className="drawercomp">
@@ -20,13 +27,22 @@ function Portfolio() {
             </div>
             <div className="wrapper">
                 <NavigationView/>
+                
             </div>
-
+            
             <div className="portfolio-area">
-                {content.map(files => (
-                    <File name={files.name} link={files.link} />
-
+                {content.map((files, no) => (
+                    <File 
+                    name={files.name} 
+                    key={no} 
+                    title ={files.name}
+                    customClickEvent={()=>contentViewer(no)} />
+                    
                 ))}
+               
+                
+                
+                
             </div>
         </div>
 
