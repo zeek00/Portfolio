@@ -25,7 +25,6 @@ function App() {
                   <Route path="/contact"  element={<Contact/>}/>
                   <Route path="/about"  element={<About/>}/>
                   <Route path="/portfolio"  element={<Portfolio/>}/>
-
               </Routes>
           </BrowserRouter>
           <ReactNotifications/>
