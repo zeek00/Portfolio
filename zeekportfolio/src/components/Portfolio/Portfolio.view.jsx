@@ -14,10 +14,7 @@ function Portfolio() {
         {id:3, name: 'Projects', link: 'https://github.com/zeek00'},
     ]
 
-    const contentViewer = (id)=>{
-        console.log('this is' + id);
-        
-    }
+    const contentViewer = content.id
     
     
     return(
@@ -31,12 +28,12 @@ function Portfolio() {
             </div>
             
             <div className="portfolio-area">
-                {content.map((files, no) => (
+                {content.map((files) => (
                     <File 
                     name={files.name} 
-                    key={no} 
-                    title ={files.name}
-                    customClickEvent={()=>contentViewer(no)} />
+                    key={files.id}
+                    no={files.id}
+                    customClickEvent={contentViewer} />
                     
                 ))}
                
