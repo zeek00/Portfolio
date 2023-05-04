@@ -13,6 +13,7 @@ import {COLOR} from "rsuite/utils";
 import {RiFolderMusicFill} from "react-icons/ri";
 import {BiAtom} from "react-icons/bi";
 import NavigationView from "../Navigation/Navigation.view";
+import Skills from './Skills.view';
 
 
 function About() {
@@ -43,29 +44,14 @@ function About() {
 
                     <Col md={12} lg={12}>
                         <section className="skills top">
-                            <h5>Skills   <span className='dot'>.</span>
+                            <h5>Skills  
+                                <span className='dot'>.</span>
                                 <span className='dot'>.</span>
                                 <span className='dot'>.</span>
                                 <span className='dot'>.</span>
                             </h5>
                             <div className="skills-wrap">
-                                <h6>Javascript/React/Node</h6>
-                            </div>
-                            <div className="skills-wrap">
-                                <h6>.NET/C#/C++</h6>
-                            </div>
-                            <div className="skills-wrap">
-                                <h6>Illustrator/Photoshop/XD</h6>
-
-                            </div>
-                            <div className="skills-wrap">
-                                <h6>MySql/Mongodb</h6>
-                            </div>
-                            <div className="skills-wrap">
-                                <h6>HTML/CSS/Bootstrap</h6>
-                            </div>
-                            <div className="skills-wrap">
-                                <h6>Figma</h6>
+                                <Skills/>  
                             </div>
                         </section>
                     </Col>
@@ -138,6 +124,8 @@ function About() {
                                     Lore
                                 </h6>
                             </div>
+
+                            
 
 
 

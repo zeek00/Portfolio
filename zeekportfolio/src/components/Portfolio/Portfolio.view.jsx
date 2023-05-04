@@ -31,10 +31,9 @@ function Portfolio() {
                 {content.map((files) => (
                     <File 
                     name={files.name} 
-                    key={files.id}
+                    key={files}
                     no={files.id}
                     customClickEvent={contentViewer} />
-                    
                 ))}
                
                 
