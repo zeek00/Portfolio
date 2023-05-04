@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --duration: 20s;
+    --duration-double: 10s;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.item{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-about{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    overflow: auto;
+    
+   
+    
+}
+
+.icons{
+    font-size: 2.5em;
+    transition: 0.3s ease;
+    color: white;
+    margin: 0 0.8rem;
+    padding: 2px;
+}
+.icons:hover{
+    
+    transform: scale(1.2);
+    color: #ff1737;
+    cursor: pointer;
+    
+  }
+
+  @keyframes slide-then-hide {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      display: none;
+      transform: translate(-100%, 0);
+    }
+  }
+  

@@ -188,19 +188,19 @@ function Contact () {
 
                                                             <Row>
                                                                 <Col md={12} lg={5} >
-                                                                    <input type="text" name="user_name" value={formValues.user_name} onChange={handleChange} className="form-control" id="name" placeholder="Your Name *"/>
-                                                                    <p className='error'>{formErrors.user_name}</p>
+                                                                    <input type="text" name="user_name" value={formValues.user_name} onChange={handleChange} className="form-control" id="name" placeholder="Your Name *" required/>
+                                                                    {/* <p className='error'>{formErrors.user_name}</p> */}
                                                                 </Col>
 
                                                                 <Col md={12} lg={7} >
-                                                                    <input type="email" name="user_email" value={formValues.user_email} onChange={handleChange} className="form-control" id="email" placeholder="Your Email *"/>
-                                                                    <p className='error'>{formErrors.user_email}</p>
+                                                                    <input type="email" name="user_email" value={formValues.user_email} onChange={handleChange} className="form-control" id="email" placeholder="Your Email *" pattern="^(.+)@(.+)$" required/>
+                                                                    {/* <p className='error'>{formErrors.user_email}</p> */}
                                                                 </Col>
                                                             </Row>
                                                             <Form.Group className="message-area">
-                                                                <textarea className="form-control" name="message" value={formValues.message} onChange={handleChange} id="message" rows="5" placeholder="Message *">
+                                                                <textarea className="form-control" name="message" value={formValues.message} onChange={handleChange} id="message" rows="5" placeholder="Message *" required>
                                                                 </textarea>
-                                                                <p className='error'>{formErrors.message}</p>
+                                                                {/* <p className='error'>{formErrors.message}</p> */}
                                                             </Form.Group>
 
                                                             <div className="text-center mb-2">
