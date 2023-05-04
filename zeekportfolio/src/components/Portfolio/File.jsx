@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Filetype from "./Filetype";
 
 const File = (props) => {
     const [show, setShow] = useState(false);
@@ -36,9 +37,16 @@ const File = (props) => {
                 dialogClassName="modal-dialog modal-xl"
                 >
                     <Modal.Header closeButton>
-                    <Modal.Title>{props.title}</Modal.Title>
+                    <Modal.Title>{props.name}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>
+                        <div className="file-container">
+                            <Filetype
+                            id={props.no}
+                             />
+
+                        </div>
+                    </Modal.Body>
                     <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
