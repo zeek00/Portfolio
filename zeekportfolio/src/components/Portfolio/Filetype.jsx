@@ -8,7 +8,13 @@ const Filetype = (props) =>{
     const id = props.id
     return(
         <div>
-            {id === 3 ? (<div>Hey</div>) : (<div>hi</div>)}
+            {id === 3 ? (<div>
+               <h1>Coming soon ..</h1>
+               <a target='#' className='link' href={props.link}>visit this link for now:</a>
+               </div>) : (<div>
+                <h1>Almost here ..</h1>
+                <a target='#' className='link' href={props.link}>visit this link for now:</a>
+                </div>)}
         </div>
 
     );
