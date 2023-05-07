@@ -15,46 +15,40 @@ const File = (props) => {
    
     return (
         <Container>
-            <Row>
-                <Col md={12} lg={4}>
-                    <div className="design" onClick={()=>props.customClickEvent}>
-                        
-                        <span><AiFillFolder onClick={handleShow}/></span>
-        
-                        <div className="title">
-                            <a target={"_blank"} href={props.link}>
-                                <p>{props.name}</p>
-                            </a>
-                        </div>
+            <div className="design"onClick={handleShow} >
+                <span><AiFillFolder /></span>
+                <div className="title">
+                    <a target={"_blank"} rel="noreferrer" href={props.link}>
+                        <p>{props.name}</p>
+                    </a>
+                </div>
+            </div>
+               
+            
+            <Modal 
+            show={show} 
+            onHide={handleClose}
+            dialogClassName="modal-dialog modal-xl"
+            >
+                <Modal.Header closeButton>
+                <Modal.Title>{props.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="file-container">
+                        <Filetype
+                        id={props.no}
+                        link={props.link}
+                        />
                     </div>
-                </Col>
-
-            </Row>
-            <div>
-                <Modal 
-                show={show} 
-                onHide={handleClose}
-                dialogClassName="modal-dialog modal-xl"
-                >
-                    <Modal.Header closeButton>
-                    <Modal.Title>{props.name}</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <div className="file-container">
-                            <Filetype
-                            id={props.no}
-                             />
-
-                        </div>
-                    </Modal.Body>
-                    <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    
-                    </Modal.Footer>
-                </Modal>
-        </div>
+                </Modal.Body>
+                <Modal.Footer>
+                <Button variant="danger" onClick={handleClose}>
+                    Close
+                </Button>
+                
+                </Modal.Footer>
+            </Modal>
+            
         </Container>
        
     );
