@@ -2,9 +2,9 @@
 .portfolioarea{
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 5%;
-    margin-top: 12vh;
+    margin: 12vh, 0, 5vh, 0;
     height: auto;
 
 
@@ -20,7 +20,7 @@
     align-items: center;
     background: rgb(0,0,0,0.6);
     color: #ccc;
-    font-size: 17vh;
+    font-size: 13vh;
     margin-bottom: 10vh;
     
 
@@ -84,16 +84,26 @@
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .portfolioarea{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin-top: 12vh;
+        height: auto;
+    
+    
+    }
 
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .portfolio-area{
+    .portfolioarea{
         position: relative;
         padding: 5%;
-        margin: 8vh auto;
+        margin: 10vh auto;
         display: flex;
         flex-direction: row; 
         height: auto;
