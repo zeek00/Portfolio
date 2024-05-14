@@ -1,0 +1,139 @@
+
+.portfolioarea{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    margin-top: 12vh;
+    height: auto;
+
+
+}
+
+.modalBody{
+    height: auto;
+}
+
+.design{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background: rgb(0,0,0,0.6);
+    color: #ccc;
+    font-size: 17vh;
+    margin-bottom: 10vh;
+    
+
+}
+
+
+.title{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+
+}
+
+.title a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.title:hover{
+    background: rgb(255,23,55);
+    color: #000;
+}
+
+.title p{
+    font-size: 4vh;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+
+.filecontainer{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 300px;
+
+}
+
+.link{
+    color: rgb(255,23,55);
+    cursor: pointer;
+}
+
+.custom-modal {
+    height: 90vh;
+  }
+  
+  .custom-modal .modal-content {
+    height: 100%;
+  }
+
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .portfolio-area{
+        position: relative;
+        padding: 5%;
+        margin: 8vh auto;
+        display: flex;
+        flex-direction: row; 
+        height: auto;
+        width: 80%;
+    }
+
+
+    .design{
+        background: rgb(0,0,0,0.6);
+        color: #ccc;
+        width: 20vw;
+        margin: 0 auto;
+        font-size: 10vh;
+        cursor: pointer;
+    }
+
+    .title{
+        width: 100%;
+        border-top: 1px solid #ccc;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+
+    }
+    .title p{
+        font-size: 3vh;
+        text-align: center;
+    }
+
+
+
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+}

@@ -1,0 +1,41 @@
+import React from 'react'
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Bg from './components/Background/Bg.view';
+import { ReactNotifications} from 'react-notifications-component'
+import Contact from "./components/Contact/Contact.view";
+import Home from "./components/Home/Home.view";
+import About from "./components/About/About.view";
+import Portfolio from "./components/Portfolio/Portfolio.view";
+import Learn from "./components/statePropsTutorial/stateprops";
+import Item from './components/Portfolio/Item';
+import Content from './components/Portfolio/Content';
+
+function App() {
+  return (
+      <div className="App">
+          <BrowserRouter>
+              <Routes>
+                <Route path='stateprops' element={<Learn/>}/>
+                <Route path="/"  element={<Bg />}/>
+                <Route path="/home"  element={<Home/>}/>
+                <Route path="/contact"  element={<Contact/>}/>
+                <Route path="/about"  element={<About/>}/>
+                <Route path="/portfolio"  element={<Portfolio/>}>
+                    <Route path=":route" element={<Content />} />
+                </Route>
+              </Routes>
+          </BrowserRouter>
+          <ReactNotifications/>
+          </div>
+
+   
+  );
+}
+
+export default App;
