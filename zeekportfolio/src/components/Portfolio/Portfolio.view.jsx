@@ -8,7 +8,7 @@ import File from './File'
 function Portfolio() {
     useNavigate();
     const content = [
-        {id:1, name: 'Graphic Designs', link:'https://drive.google.com/drive/folders/1pZIW-rTXZBhxgW7v4qph4B6RPgQdqfYP?usp=sharing'},
+        {id:1, name: 'Graphic Designs', link:'https://drive.google.com/drive/folders/1pz-ukXQ2zpQDaz_p8pVG_RQUB8xYeX0G?usp=sharing'},
         {id:2, name: 'Projects', link: 'https://github.com/zeek00'},
     ]
 
