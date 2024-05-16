@@ -1,41 +1,45 @@
 
 body{
-    overflow: scroll;
+    overflow: auto;
     height: auto;
     overflow-x: hidden;
 }
-
 ::-webkit-scrollbar{
     width: 0.8em;
-
-
-
 }
 ::-webkit-scrollbar-track{
     background: rgb(0,0,0,0.9);
-
 }
 ::-webkit-scrollbar-thumb{
     background: rgb(255,23,55);
-
 }
 ::-webkit-scrollbar-thumb:hover{
     background: rgb(255,23,55,0.7);
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    height: auto;
 
 }
 
+.img{
+    display: flex;
+    margin: 0 auto;
+}
 
 .img-style{
-    width: 100%;
-    height: auto;
-    background: #0a53be;
-}
-.experience{
-    margin-top: 30px;
-    text-align: left;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
 }
 .experience p{
     color: #fff;
+    height: inherit;
+    font-size: 0.6rem;
+    text-align: justify;
+    margin: 0;
 }
 .skills{
     width: 100%;
@@ -44,7 +48,6 @@ body{
     /* background-color: rgba(255, 255, 255, 0.08); */
     color: #fff;
     width: 100%;
-    padding: 2vh;
     margin: 0 0 5vh 0;
 }
 
@@ -74,9 +77,7 @@ body{
 
 
 
-@media (min-width: 576px) {
 
-}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
@@ -85,7 +86,6 @@ body{
         display: inline-block;
         background-color: rgba(255, 255, 255, 0.08);
         color: #fff;
-        padding: 2vh;
         margin: 0 0 2vh 2vh;
         overflow: hidden;
         
@@ -98,55 +98,40 @@ body{
 
 }
 
+@media only screen and (min-width:480px) and (max-width: 700px) {
+
+    
+}
+
+
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
-   body{
-
-       height: auto;
-       overflow-x: hidden;
-   }
-
-    ::-webkit-scrollbar{
-        width: 0.8em;
-        display: flex;
-
-
+    .bio{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1rem;
+        max-height: 40vh;
+        overflow: auto;
     }
-    ::-webkit-scrollbar-track{
-        background: rgb(0,0,0,0.9);
-
-    }
-    ::-webkit-scrollbar-thumb{
-        background: rgb(255,23,55);
-
-    }
-    ::-webkit-scrollbar-thumb:hover{
-        background: rgb(255,23,55,0.7);
-
-    }
-
-    .img{
-        width: 350px;
-        height: 350px;
-        margin: 0 auto;
-    }
-
-    .experience{
-        margin-top: 0;
+    
+    .img-style{
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
     }
 
     .experience p{
         text-align: justify;
+        font-size: 1.2rem;
+        margin: 0;
     }
 
 
     .skills-wrap {
         display: inline-block;
+        margin: 0 auto;
         background-color: rgba(255, 255, 255, 0.08);
         color: #fff;
-        padding: 2vh;
-
 
     }
     .skills-wrap h6{
