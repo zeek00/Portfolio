@@ -127,9 +127,7 @@ function Contact () {
                                         <span className='dot'>.</span>
                                         <span className='dot'>.</span>
                                     </h5>
-                                    <h2 className='section-title'>
-                                        CONTACT ME
-                                    </h2>
+                                
                                     <Row>
                                         <Col md={12} lg={6} >
                                             <div className="d-flex align-items-stretch mb-4 info-area">
