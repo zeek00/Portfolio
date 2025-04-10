@@ -18,14 +18,13 @@ export const projects = [
         image: shoopp,
         description: 'An e-commerce fullstack web application built using MERN stack deployed on railway and netlify',
         techstack:['javascript', 'react.js', 'node', 'mongodb', 'express'],
-        route: 'shoopp'
+        route: 'shoopp',
     },
     {
         name: 'REDdit APP',
         link: 'https://redditapp.surge.sh/',
         image: redditapp,
         description: 'A web app utilising the Reddit API to showcase and search for posts',
-         route: 'redditapp'
         techstack: ['react.js'],
         route: 'redditapp'
     }

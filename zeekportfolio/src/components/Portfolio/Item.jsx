@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import { projects } from './data';
 import styled from 'styled-components';
 import { Link, Outlet } from 'react-router-dom';
@@ -60,28 +60,23 @@ const Item = () => {
         <>
             <Container>
                 {projects.map((item,index)=>(
-                    <div className='project' key={index}>
-                        <img src={item.image} alt="project image" />
-                        <Link className='btn' to={item.route}>{item.name}</Link>
-                    <div className='project'
-                         key={index}
-                         style={{
-                             border: activeIndex === index ? '4px solid crimson' : 'transparent',
-                             borderRadius: '10px',
+                        <div className='project'
+                             key={index}
+                             style={{
+                                 border: activeIndex === index ? '4px solid crimson' : 'transparent',
+                                 borderRadius: '10px',
 
-                         }}>
-                        <img src={item.image} alt="project image" />
-                        <Link className='btn' style={{
-                            backgroundColor: activeIndex === index ? 'crimson' : 'black',
-                        }}
-                              onClick={handleClick(index)} to={item.route}>{item.name}</Link>
-
-                    </div>
+                             }}>
+                            <img src={item.image} alt="project image" />
+                            <Link className='btn' style={{
+                                backgroundColor: activeIndex === index ? 'crimson' : 'black',
+                            }}
+                                  onClick={handleClick(index)} to={item.route}>{item.name}</Link>
+                        </div>
                 ))}
-
             </Container>
             <Content>
-                <Outlet/>
+                <Outlet />
             </Content>
             
         </>
