@@ -12,7 +12,8 @@ const Container = styled.div`
     overflow: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    }
+    
+    
 
     ::-webkit-scrollbar{
     width: 0.2rem;
@@ -41,6 +42,7 @@ const Container = styled.div`
 
     .desc{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-flow: column wrap;
@@ -51,6 +53,20 @@ const Container = styled.div`
     }
     .btn{
         color: rgb(255,23,55);
+    }
+
+    .stack{
+        display: flex;
+        gap: 0.8rem;
+
+    }
+    .techstack{
+        display: flex;
+        background: crimson;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        color: #fff;
+        margin-bottom: 0.5rem;
     }
     @media only screen and (max-width: 991px) {
         /* Styles for small screens */
@@ -85,6 +101,7 @@ const Container = styled.div`
         
     }
     
+    
 `;
 
 
@@ -100,6 +117,14 @@ const Content = (prop) => {
                         <p>{item.description}</p>
                         <Link className="btn" to={item.link} target="_blank" rel="noopener noreferrer">Visit</Link>
 
+                        <h4>Technologies</h4>
+                        <span className="stack">
+                            {
+                                item.techstack.map(item=> (<span className="techstack">{item}</span>))
+                            }
+                        </span>
+
+                        <Link className="btn" to={item.link} target="_blank" rel="noopener noreferrer">Visit</Link>
                     </div>
                 </>
 
